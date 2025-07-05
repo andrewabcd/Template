@@ -1,0 +1,117 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #2c3e50;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #2776ae;
+}
+
+.login-container p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-container .forgot-link {
+    text-decoration: none;
+    color: #2776ae;
+}
+
+.login-container .forgot-link:hover {
+    text-decoration: underline;
+}
+
+.login-container .toggle-mode {
+    margin-top: 15px;
+    background: transparent;
+    border: 1px solid #2c3e50;
+    color: #2c3e50;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark .login-container {
+    background-color: #2b2b2b;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .login-container h2 {
+    color: #ffffff;
+}
+
+body.dark input {
+    background-color: #444;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+body.dark .toggle-mode {
+    border-color: #ccc;
+    color: #ccc;
+}
+
+body.dark footer {
+    color: #aaa;
+}
