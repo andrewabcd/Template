@@ -62,6 +62,18 @@ a {
   font-weight: 500;
 }
 
+/* Highlight menu item saat aktif */
+.menu a.active {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0c1e3a;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 1.05em;
+  text-decoration: underline;
+}
+
+
 /* HERO */
 .hero {
   background: url('Assets/Images/Backgrounds/BG.jpg') no-repeat center center/cover;
@@ -443,6 +455,11 @@ footer {
 
 .member a img {
   height: 20px;
+}
+
+.member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 /* REUSE RESPONSIVE */
